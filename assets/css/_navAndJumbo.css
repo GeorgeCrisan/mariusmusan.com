@@ -1,0 +1,57 @@
+.custom-nav-elements {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Bad Script', cursive; }
+
+.navbar-light .navbar-nav .nav-link {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: white;
+  font-size: 1.2rem; }
+  .navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:visited {
+    color: white; }
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: yellow;
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s; }
+
+.navbar-light .navbar-brand {
+  color: white;
+  font-size: 1.6rem; }
+  .navbar-light .navbar-brand:active, .navbar-light .navbar-brand:visited {
+    color: white; }
+
+.nav-item {
+  margin-left: 60px; }
+  .nav-item:first-child {
+    margin-left: 0px; }
+
+.navbar-light .navbar-toggler {
+  background-color: honeydew; }
+  .navbar-light .navbar-toggler:focus {
+    outline: thin dotted; }
+
+.custom-nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(#051937), color-stop(#0b1c3f), color-stop(#131f47), color-stop(#1c224f), to(#252557));
+  background: -webkit-linear-gradient(top, #051937, #0b1c3f, #131f47, #1c224f, #252557);
+  background: -o-linear-gradient(top, #051937, #0b1c3f, #131f47, #1c224f, #252557);
+  background: linear-gradient(to bottom, #051937, #0b1c3f, #131f47, #1c224f, #252557); }
+
+@media screen and (max-width: 576px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    font-size: 1.2rem; }
+    .navbar-light .navbar-nav .nav-link:active, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+      font-size: 1.2rem;
+      color: yellow; }
+  .nav-item {
+    margin-left: 0; } }
