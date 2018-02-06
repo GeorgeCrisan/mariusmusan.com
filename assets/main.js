@@ -25,13 +25,16 @@ $('document').ready(function(){
               
             
       }//end of sticky
-
-
+ 
       $('.gallery-custom a img').on('click',function(){
-                  $('body').toggleClass('special-overflow');
-      })
+            $('body').addClass('special-overflow');
+            });  
+            
+  
+          
+   
     
-
+ 
 closeMenuAndSticky();
       renderGallery();
       baguetteBox.run('.gallery');
