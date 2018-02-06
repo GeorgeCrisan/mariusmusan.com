@@ -114,6 +114,7 @@
         // Move 100 pixels up to close the overlay
         } else if (touch.startY - touchEvent.pageY > 100) {
             hideOverlay();
+            $('body').removeClass('special-overflow');
         }
     };
     var touchendHandler = function() {
@@ -474,7 +475,7 @@
         if (overlay.style.display === 'none') {
             return;
         }
-
+        $('body').removeClass('special-overflow');
         unbind(document, 'keydown', keyDownHandler);
         // Fade out and hide the overlay
         overlay.className = '';
