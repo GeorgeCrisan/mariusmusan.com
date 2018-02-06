@@ -11,11 +11,8 @@ $('document').ready(function(){
             _.forEach($('.gallery a img'),function(element,key){
                   $(element).attr('src','assets/images/treisutezece/p' + key + '.jpg');     
                   
-            });
-      
-      
-            
-      }
+            });          
+      } //end of render Gallery
 
       function closeMenuAndSticky(){
 
@@ -26,13 +23,14 @@ $('document').ready(function(){
               
                 // $('#sticker').sticky({topSpacing:0});
               
-                  
-
+            
       }//end of sticky
 
 
-      
-     
+      $('.gallery-custom a img').on('click',function(){
+                  $('body').toggleClass('special-overflow');
+      })
+    
 
 closeMenuAndSticky();
       renderGallery();
@@ -46,4 +44,4 @@ closeMenuAndSticky();
 
 
 
-});
+});// end of doc ready
