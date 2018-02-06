@@ -466,6 +466,7 @@
             document.webkitExitFullscreen();
         }
     }
+    
 
     function hideOverlay() {
         if (options.noScrollbars) {
