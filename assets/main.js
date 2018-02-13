@@ -13,6 +13,7 @@ $('document').ready(function(){
                   
             });          
       } //end of render Gallery
+      
 
       function closeMenuAndSticky(){
 
